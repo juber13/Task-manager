@@ -21,10 +21,11 @@
             </div>
             <div class="modal-body">
             <form id="task-manager-form">
-                <input type="text" class="form-control" placeholder="Taks Name" id="task-name">
-                <textarea name="" id="description" cols="30" rows="10" placeholder="Description" class="form-control my-2"></textarea>
+                <input type="text" class="form-control" placeholder="Taks Name" id="task-name" required>
+                <textarea name="" id="description" cols="30" rows="10" placeholder="Description" class="form-control my-2" required></textarea>
                 <label>Label</label>
-               <select name="" id="option-value" class="form-control">
+               <select name="" id="option-value" class="form-control" required>
+                <option selected>--Choose--</option>
                 <option value="start">Start</option>
                 <option value="process">In Process</option>
                 <option value="review">In Review</option>
@@ -33,7 +34,7 @@
              </div>
               <div class="modal-footer">
                 <button class="btn btn-warning ml-2">Close</button>
-                <button class="btn btn-primary" type="submit">Save changes</button>
+                <button class="btn btn-primary" type="submit">Add</button>
               </div>
            </form>
           </div>

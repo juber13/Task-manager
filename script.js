@@ -57,6 +57,7 @@ function renderHTML(){
 
 renderHTML();
 
+
 function draggingFunction(element){
    element.addEventListener('dragstart' , () => element.classList.add('dragging'));
    element.addEventListener('dragend' , () => element.classList.remove('dragging'));    
